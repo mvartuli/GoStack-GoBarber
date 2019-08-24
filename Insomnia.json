@@ -1,0 +1,182 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2019-08-24T23:40:27.729Z",
+    "__export_source": "insomnia.desktop.app:v6.6.2",
+    "resources": [
+        {
+            "_id": "req_82d58679d96140d3ad31c9bb2b8ce524",
+            "authentication": {},
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"email\": \"Carol@deddison.com\",\n\t\"password\": \"dedisson\"\n}"
+            },
+            "created": 1566674003306,
+            "description": "",
+            "headers": [
+                {
+                    "id": "pair_73876022715a49d88c9ae4ee7343e021",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "isPrivate": false,
+            "metaSortKey": -1566617526507.5,
+            "method": "POST",
+            "modified": 1566689151585,
+            "name": "Create Session",
+            "parameters": [],
+            "parentId": "fld_0d1420c5ea624512b76307a3b6ba66ff",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{ base_url  }}/sessions",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_0d1420c5ea624512b76307a3b6ba66ff",
+            "created": 1566673997521,
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1566673997521,
+            "modified": 1566673997521,
+            "name": "Sessions",
+            "parentId": "wrk_ab01a03398414e269ba7f9e1731460d2",
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_ab01a03398414e269ba7f9e1731460d2",
+            "created": 1566567294601,
+            "description": "",
+            "modified": 1566567294601,
+            "name": "GoBarber",
+            "parentId": null,
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_9b3c360ae91f45109a09a397f5810c2b",
+            "authentication": {},
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Carol Bolada\",\n\t\"email\": \"Carol@bolado.com\",\n\t\"password\": \"deddybolado\"\n}"
+            },
+            "created": 1566667745848,
+            "description": "",
+            "headers": [
+                {
+                    "id": "pair_73876022715a49d88c9ae4ee7343e021",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "isPrivate": false,
+            "metaSortKey": -1566667745848,
+            "method": "POST",
+            "modified": 1566688047661,
+            "name": "Create",
+            "parameters": [],
+            "parentId": "fld_e1608bb875464a8ab211533656746647",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{ base_url  }}/users",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_e1608bb875464a8ab211533656746647",
+            "created": 1566667673727,
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1566667673727,
+            "modified": 1566667673727,
+            "name": "Users",
+            "parentId": "wrk_ab01a03398414e269ba7f9e1731460d2",
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_d6307d8f4e3941868665d270e98cae33",
+            "authentication": {
+                "disabled": false,
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwiaWF0IjoxNTY2Njc0MzU0LCJleHAiOjE1NjcyNzkxNTR9.jyu0rCdTbkA4KajKZi90qvETXZkLh0VP6CbBNTCRriU",
+                "type": "bearer"
+            },
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"name\": \"Vanya Chique Chique\",\n\t\"email\": \"Carol@deddison.com\",\n\t\"oldPassword\": \"dedisson\",\n\t\"password\": \"dedisson\",\n\t\"confirmPassword\": \"dedisson\"\n}"
+            },
+            "created": 1566675910673,
+            "description": "",
+            "headers": [
+                {
+                    "id": "pair_73876022715a49d88c9ae4ee7343e021",
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "isPrivate": false,
+            "metaSortKey": -1566642636177.75,
+            "method": "PUT",
+            "modified": 1566689237941,
+            "name": "Update",
+            "parameters": [],
+            "parentId": "fld_e1608bb875464a8ab211533656746647",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "{{ base_url  }}/users",
+            "_type": "request"
+        },
+        {
+            "_id": "req_697ebc69f08745a28604c792576e1a3c",
+            "authentication": {},
+            "body": {},
+            "created": 1566567307167,
+            "description": "",
+            "headers": [],
+            "isPrivate": false,
+            "metaSortKey": -1566567307167,
+            "method": "GET",
+            "modified": 1566567421412,
+            "name": "Get Test",
+            "parameters": [],
+            "parentId": "wrk_ab01a03398414e269ba7f9e1731460d2",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "http://localhost:3333/",
+            "_type": "request"
+        },
+        {
+            "_id": "env_bbc36c5e44cd9fb6183aa9b5e3d11bd9bf28d5f7",
+            "color": null,
+            "created": 1566567294642,
+            "data": { "base_url": "http://localhost:3333" },
+            "dataPropertyOrder": { "&": ["base_url"] },
+            "isPrivate": false,
+            "metaSortKey": 1566567294642,
+            "modified": 1566667718766,
+            "name": "Base Environment",
+            "parentId": "wrk_ab01a03398414e269ba7f9e1731460d2",
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_bbc36c5e44cd9fb6183aa9b5e3d11bd9bf28d5f7",
+            "cookies": [],
+            "created": 1566567294646,
+            "modified": 1566567294646,
+            "name": "Default Jar",
+            "parentId": "wrk_ab01a03398414e269ba7f9e1731460d2",
+            "_type": "cookie_jar"
+        }
+    ]
+}
